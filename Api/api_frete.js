@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const apiFrete = (endPoint, body, method) => {
     const token = process.env.TOKEN
-    const url = `https://api.centraldofrete.com/${endPoint}`
+    const url = `https://sandbox.centraldofrete.com/${endPoint}`
     let options = {
         method: method,
         body: body,
