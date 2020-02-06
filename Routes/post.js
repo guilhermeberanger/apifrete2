@@ -22,9 +22,9 @@ router.post('/', async (req, res) => {
     
 });
    
-router.get('/detalhes', async (req, res) => {
+router.get('/listar', async (req, res) => {
     try{
-        const endPoint = `v1/quotation/IXHCRWUV`
+        const endPoint = `v1/quotation`
         const data = await apiFrete (endPoint,req.body,"GET")
         res.json(data)
 
